@@ -21,12 +21,12 @@ Installation instructi9ons:
 
 3) use CMAKE gui to configure a build to visual studio 2010 x64, hit configure, then generate. You will receive errors that libraries are not detected 
 you can see the correct paths here: https://ibb.co/hATg6v
-At the very least, CUDA and 
+At the very least, CUDA and OPTIX should have been successfully detected and added
 
 
 4) open the generated visual studio file in visual studio 2010, set the compile to release
 
-5) build the files 
+5) build the EyeAR project (it will compile all the other projects as they are dependencies
 (if the linker complains about missing linked files, edit the linker settings and remove the references)
 
 6) once built, navigate to the built binary directory, exctract the sample config files (SampleFiles.zip in the repository) to the built binary location
